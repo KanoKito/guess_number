@@ -1,5 +1,6 @@
 from random import randint
 
+
 def guess_the_number():
     # Определяем константы
     MIN_NUMBER = 1
@@ -19,7 +20,10 @@ def guess_the_number():
             
             # Проверяем диапазон введенного числа
             if guess < MIN_NUMBER or guess > MAX_NUMBER:
-                print(f'Пожалуйста, введите число в диапазоне от {MIN_NUMBER} до {MAX_NUMBER}.')
+                print(
+                    f'Пожалуйста, введите число в диапазоне от'
+                    f'{MIN_NUMBER} до {MAX_NUMBER}.'
+                    )
                 continue
             
             # Если число меньше загаданного...
@@ -32,12 +36,15 @@ def guess_the_number():
                 
             # Если число угадано...
             else:
-                print(f'Отличная интуиция! Вы угадали число за {attempts} попыток :)')
+                print(
+                    f'Отличная интуиция!' 
+                    f'Вы угадали число за {attempts} попыток :)'
+                    )
                 break
                 
         except ValueError:
             print('Пожалуйста, введите корректное целое число.')
 
+
 # Запускаем игру
 guess_the_number()
-# def say_hello():    
