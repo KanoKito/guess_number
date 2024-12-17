@@ -41,6 +41,3 @@ def guess_the_number():
 # Запускаем игру
 guess_the_number()
 # def say_hello():    
-#     print('Привет, Практикум!')
-    
-# say_hello()   
